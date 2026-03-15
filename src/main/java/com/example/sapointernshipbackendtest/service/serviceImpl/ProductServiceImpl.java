@@ -21,6 +21,7 @@ public class ProductServiceImpl implements ProductService {
         Product p = new Product();
         p.setName(product.name);
         p.setStock(product.stock);
+        p.setPrice(product.price);
         return repository.save(p);
     }
 
@@ -40,7 +41,7 @@ public class ProductServiceImpl implements ProductService {
 
         p.get().setName(product.name);
         p.get().setStock(product.stock);
-
+        p.get().setPrice(product.price);
         return repository.save(p.get());
     }
 

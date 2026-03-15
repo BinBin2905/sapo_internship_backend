@@ -19,5 +19,7 @@ public class Product {
 
     private int stock;
 
+    private double price;
+
 
 }
